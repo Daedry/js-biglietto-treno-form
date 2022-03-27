@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biglietto del treno</title>
+  <link rel="stylesheet" href="./asset/style.css" />
+</head>
+
+<body class="bg-pan-left">
+  <div class="container-lg">
+    <h1>calcola il prezzo del tuo biglietto</h1>
+    <div class="container-top shadow-inset-center">
+        <div class="wrapper d-flex">
+          <div class="name">
+            <div class="inp_title">Nome e cognome</div>
+            <input id="nameSurname" placeholder="Nome e cognome" type="text" />
+          </div>
+          <!-- /.name -->
+
+          <div class="mileage_km">
+            <div class="inp_title">KM da percorrere</div>
+            <div>
+              <input id="km" placeholder="KM da percorrere" type="number" />
+            </div>
+          </div>
+          <!-- /.mileage_km -->
+
+          <div class="age">
+            <div class="inp_title">Fascia d'età</div>
+
+            <select id="age" name="age">
+              <option value="Seleziona">Seleziona</option>
+              <option value="Minorenne (0-17)">Minorenne (0-17)</option>
+              <option value="Adulto (18-64)">Adulto (18-64)</option>
+              <option value="Anziano (65+)">Anziano (65+)</option>
+            </select>
+
+          </div>
+          <!-- /.age -->
+
+        </div>
+        <!-- /.wrapper -->
+
+        <div class="wrapper-bot d-flex">
+          <button onclick="generateTicket()" id="submit" class="btn btn-l">
+            Genera
+          </button>
+          <button id="reset" class="btn btn-r">Annulla</button>
+        </div>
+        <!-- /.wrapper-bot -->
+     
+    </div>
+    <!-- /.container-top -->
+
+    <h2>il tuo Biglietto</h2>
+    <div class="container-bot shadow-inset-center">
+      <!-- /.box -->
+      <div id="main"></div>
+    </div>
+    <!-- /.container-bot -->
+  </div>
+
+  <script src="./asset/main.js"></script>
+
+</body>
+
+</html>
