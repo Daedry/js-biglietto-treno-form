@@ -13,6 +13,7 @@
   <div class="container-lg">
     <h1>calcola il prezzo del tuo biglietto</h1>
     <div class="container-top shadow-inset-center">
+      <form action="">
         <div class="wrapper d-flex">
           <div class="name">
             <div class="inp_title">Nome e cognome</div>
@@ -45,13 +46,16 @@
         <!-- /.wrapper -->
 
         <div class="wrapper-bot d-flex">
-          <button onclick="generateTicket()" id="submit" class="btn btn-l">
-            Genera
-          </button>
-          <button id="reset" class="btn btn-r">Annulla</button>
+          <button id="reset" type="reset" class="btn btn-r">Annulla</button>
+
         </div>
         <!-- /.wrapper-bot -->
-     
+      </form>
+      <div>
+        <button onclick="generateTicket()" id="submit" class="btn btn-l">
+          Genera
+        </button>
+      </div>
     </div>
     <!-- /.container-top -->
 
